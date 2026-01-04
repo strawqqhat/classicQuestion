@@ -2,3 +2,4 @@
 - [MySQL](classic/mysql)
 - [Redis](classic/redis)
 - [MQ](classic/mq)
+- [Kafka](classic/kafka)
