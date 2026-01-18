@@ -1,4 +1,5 @@
 - [Java](classic/java)
+- [LocalCache](classic/localcache.md)
 - [MySQL](classic/mysql)
 - [Redis](classic/redis)
 - [Kafka](classic/kafka)
