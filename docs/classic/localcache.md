@@ -146,14 +146,14 @@ f. 过期清理优化：Caffeine结合惰性清理和定时任务清理
 2、WindowCache(窗口缓存)：新key先进入WindowCache，只有达到一定频率后才进入主缓存，避免突发冷数据污染主缓存<br>
 3、AdmissionWindow(准入窗口)：结合频率草图和窗口缓存，淘汰频率最低的key<br>
 #### 3.4 如何选用
-1、优先用Caffeine
-a. 性能远超Guava，尤其是高并发场景
-b. 兼容Guava Cache的API，迁移成本低
-c. Spring5原生支持，适配高并发非阻塞场景
+1、优先用Caffeine<br>
+a. 性能远超Guava，尤其是高并发场景<br>
+b. 兼容Guava Cache的API，迁移成本低<br>
+c. Spring5原生支持，适配高并发非阻塞场景<br>
 
-2、仅兼容老项目选Guava
-a. 项目已深度依赖Guava，且无性能瓶颈
-b. 团队对Guava更熟悉，无需额外学习成本
+2、仅兼容老项目选Guava<br>
+a. 项目已深度依赖Guava，且无性能瓶颈<br>
+b. 团队对Guava更熟悉，无需额外学习成本<br>
 
 ```java
 // Guava 代码
